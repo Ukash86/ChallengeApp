@@ -1,9 +1,10 @@
 ﻿string name = "Ewa";
-string plec = "Kobieta";
+string plec1 = "Kobieta";
+string plec2 = "Mężczyzna";
 var age = 33;
 string word1 = "Niepełnoletni";
 string word2 = " ";
-string word3 = "Mężczyzna";
+
 
 if (age > 38)
 {
@@ -17,5 +18,5 @@ if (age <= 33)
 {
     Console.WriteLine("Ewa, lat 33");
 }
-string result = word1 + word2 + word3;
+string result = word1 + word2 + plec2;
 Console.WriteLine(result);
