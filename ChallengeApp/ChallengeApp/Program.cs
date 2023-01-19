@@ -1,16 +1,7 @@
-﻿string name = "Ewa";
-string gender = "kobieta";
-int age = 33;
+﻿List<string> names = new List<string> { "Łukasz", "Daria", "Łukasz", "Daria", "Paweł", "Łukasz", "Michał", "Ania" };
 
-if (gender == "kobieta" && age < 30)
-{
-    Console.WriteLine("Kobieta poniżej 30 lat");
-}
-else if (gender == "kobieta" || gender == "mężczyzna")
-{
-    Console.WriteLine(name + ", lat " + age);
-}
-else
-{
-    Console.WriteLine("Niepełnoletni " + gender);
-}
+var nameCounts = names.GroupBy(name => name)
+                             .Select(group => new { Name = group.Key, Count = group.Count() })
+                             .ToList();
+foreach (var item in nameCounts)
+    Console.WriteLine("{0}: {1}", item.Name, item.Count);
