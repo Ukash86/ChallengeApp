@@ -1,31 +1,16 @@
 ﻿string name = "Ewa";
-char sex = 'K';
-var age = 33;
+string gender = "kobieta";
+int age = 33;
 
-if (sex == 'K')
+if (gender == "kobieta" && age < 30)
 {
-    if (age > 38)
-    {
-        Console.WriteLine("Kobieta powyżej 38 lat");
-    }
-    else if (age < 38)
-    {
-        Console.WriteLine("Kobieta poniżej 38 lat");
-
-        if (age == 33 && name == "Ewa") ;
-    }
-    {
-        Console.WriteLine("Ewa, lat 33");
-    }
+    Console.WriteLine("Kobieta poniżej 30 lat");
 }
-else if (sex != 'K')
+else if (gender == "kobieta" || gender == "mężczyzna")
 {
-    if (age >= 18)
-    {
-        Console.WriteLine("Pełnoletni Mężczyzna");
-    }
-    else if (age < 18)
-    {
-        Console.WriteLine("Niepełnoletni Mężczyzna");
-    }
+    Console.WriteLine(name + ", lat " + age);
+}
+else
+{
+    Console.WriteLine("Niepełnoletni " + gender);
 }
