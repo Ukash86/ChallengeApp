@@ -1,7 +1,44 @@
-﻿List<string> names = new List<string> { "Łukasz", "Daria", "Łukasz", "Patryk", "Paweł", "Kasia", "Michał", "Ania", "Łukasz", "Łukasz", "Kasia", "Daria", "Paweł", "Adam", "Daria", "Michał", "Patryk", "Łukasz", "Daria", "Michał"};
+﻿var Łukasz = 0;
+var Daria = 0;
+var Przemek = 0;
+var Kasia = 0;
+var Iza = 0;
+var Paweł = 0;
 
-var nameCounts = names.GroupBy(name => name)
-                             .Select(group => new { Name = group.Key, Count = group.Count() })
-                             .ToList();
-foreach (var item in nameCounts)
-    Console.WriteLine("{0}: {1}", item.Name, item.Count);
+string[] names = {"Łukasz", "Daria", "Przemek", "Kasia", "Łukasz", "Łukasz",
+                  "Iza", "Paweł", "Daria", "Daria", "Łukasz", "Przemek", "Kasia",
+                   "Przemek", "Daria", "Iza", "Kasia", "Iza", "Iza", "Łukasz", };
+
+foreach (var name in names)
+{
+    if (name == "Łukasz")
+    {
+        Łukasz++;
+    }
+    else if (name == "Daria")
+    {
+        Daria++;
+    }
+    else if (name == "Przemek")
+    {
+        Przemek++;
+    }
+    else if (name == "Kasia")
+    {
+        Kasia++;
+    }
+    else if (name == "Iza")
+    {
+        Iza++;
+    }
+    else if (name == "Paweł")
+    {
+        Paweł++;
+    }
+}
+Console.WriteLine("Łukasz    : " + Łukasz);
+Console.WriteLine("Daria     : " + Daria);
+Console.WriteLine("Przemek   : " + Przemek);
+Console.WriteLine("Kasia     : " + Kasia);
+Console.WriteLine("Iza       : " + Iza);
+Console.WriteLine("Paweł     : " + Paweł);
