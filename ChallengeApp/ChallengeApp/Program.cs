@@ -1,44 +1,68 @@
-﻿var Łukasz = 0;
-var Daria = 0;
-var Przemek = 0;
-var Kasia = 0;
-var Iza = 0;
-var Paweł = 0;
+﻿var zero = 0;
+var one = 0;
+var two = 0;
+var three = 0;
+var four = 0;
+var five = 0;
+var six = 0;
+var seven = 0;
+var eight = 0;
+var nine = 0;
 
-string[] names = {"Łukasz", "Daria", "Przemek", "Kasia", "Łukasz", "Łukasz",
-                  "Iza", "Paweł", "Daria", "Daria", "Łukasz", "Przemek", "Kasia",
-                   "Przemek", "Daria", "Iza", "Kasia", "Iza", "Iza", "Łukasz", };
+int number = 8817555;
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
 
-foreach (var name in names)
+foreach (char letter in letters)
 {
-    if (name == "Łukasz")
+    if (letter == '0')
     {
-        Łukasz++;
+        zero++;
     }
-    else if (name == "Daria")
+    else if (letter == '1')
     {
-        Daria++;
+        one++;
     }
-    else if (name == "Przemek")
+    else if (letter == '2')
     {
-        Przemek++;
+        two++;
     }
-    else if (name == "Kasia")
+    else if (letter == '3')
     {
-        Kasia++;
+        three++;
     }
-    else if (name == "Iza")
+    else if (letter == '4')
     {
-        Iza++;
+        four++;
     }
-    else if (name == "Paweł")
+    else if (letter == '5')
     {
-        Paweł++;
+        five++;
+    }
+    else if (letter == '6')
+    {
+        six++;
+    }
+    else if (letter == '7')
+    {
+        seven++;
+    }
+    else if (letter == '8')
+    {
+        eight++;
+    }
+    else if (letter == '9')
+    {
+        nine++;
     }
 }
-Console.WriteLine("Łukasz    : " + Łukasz);
-Console.WriteLine("Daria     : " + Daria);
-Console.WriteLine("Przemek   : " + Przemek);
-Console.WriteLine("Kasia     : " + Kasia);
-Console.WriteLine("Iza       : " + Iza);
-Console.WriteLine("Paweł     : " + Paweł);
+Console.WriteLine("0 => " + zero);
+Console.WriteLine("1 => " + one);
+Console.WriteLine("2 => " + two);
+Console.WriteLine("3 => " + three);
+Console.WriteLine("4 => " + four);
+Console.WriteLine("5 => " + five);
+Console.WriteLine("6 => " + six);
+Console.WriteLine("7 => " + seven);
+Console.WriteLine("8 => " + eight);
+Console.WriteLine("9 => " + nine);
